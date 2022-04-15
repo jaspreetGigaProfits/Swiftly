@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grbackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:id="@+id/dies">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0.11"
+            android:id="@+id/imageV"
+            android:src="@drawable/plan1"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discription"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="XYZ"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/purple_700"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review and Rating"
+            android:textSize="20dp"
+            android:textColor="@color/black"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/star1"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star1"
+                android:id="@+id/star2"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+               />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star2"
+                android:id="@+id/star3"
+                android:src="@drawable/star"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+               />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star3"
+                android:id="@+id/star4"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/star4"
+                android:id="@+id/star5"
+                android:src="@drawable/star"
+                android:paddingStart="5dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                >
+            </ImageView>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Comments: "></TextView>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_of_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dies"
+        android:layout_alignParentBottom="true"
+        android:transcriptMode="alwaysScroll"
+        android:layout_marginBottom="120dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_above="@+id/btnSend"
+        android:background="@drawable/edit_text_bg">
+
+    </ListView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Enter Your Msg"
+        android:id="@+id/txt_msg"
+        android:layout_toLeftOf="@+id/btnSend"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="15dp">
+
+    </EditText>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/send"
+        android:id="@+id/btnSend"
+        android:tint="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="15dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:background="@drawable/grbackground">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="90sp"
+        android:background="@drawable/grbackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rellay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDABB7"
+                android:paddingBottom="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/imgUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_bg">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="9dp"
+                        android:layout_marginBottom="9dp"
+                        android:adjustViewBounds="true"
+                        android:padding="10dp"
+                        android:src="@drawable/profile" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgUser"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15sp"
+                    android:text="Profile Name"
+                    android:textColor="#efefef"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rellay1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:paddingTop="20sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email ID"
+                            android:textColor="#373737"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/emailpr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user@gmail.com"
+                            android:textColor="#848484"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#0a1931" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Number"
+                            android:textColor="#373737"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="666-666-6666"
+                            android:textColor="#848484"
+                            android:textSize="18sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="15dp"
+                            android:background="#0a1931" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="100sp"
+                        android:layout_marginTop="50sp"
+                        android:background="@drawable/button_bg"
+                        android:text="Logout" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
